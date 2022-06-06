@@ -1,0 +1,23 @@
+//
+//  Card.h
+//  test1
+//
+//  Created by Eliah Ninyo on 03/05/2022.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface Card : NSObject
+
+@property (strong, nonatomic) NSString *contents;
+
+@property (nonatomic, getter=isChosen) BOOL chosen;
+@property (nonatomic, getter=isMachtched) BOOL matched;
+
+- (int)match:(NSArray *)otherCards;
+
+@end
+
+NS_ASSUME_NONNULL_END
